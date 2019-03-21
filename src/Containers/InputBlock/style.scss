@@ -1,0 +1,26 @@
+$colorInputArea : #e6e6e6;
+$colorBlock : #152455;
+
+.inputblock_container{
+    display: flex;
+    flex-direction: row;
+
+    background: $colorBlock;
+    padding: 12px;
+
+    .inputField{
+        width: 100%;
+        margin-left: 15px;
+        border-radius: 50px;
+        background: $colorInputArea;
+    }
+
+    .sendButton{
+        margin: 0 15px;
+        background-image: url('./send.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 50px;
+        height: 45px;
+    }
+}

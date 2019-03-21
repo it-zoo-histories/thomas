@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Istok+Web:700i');
+
+$fontFamilyForText : 'Istok Web', sans-serif;
+$fontWeight: 700;
+$fontSize: 1.4em;
+
+$colorBotMessage : #353b48;
+$colorManMessage: #8c7ae6;
+$colorTextInBotMessage: #e6e6e6;
+$colorTextInManMessage: #e6e6e6;
+
+.message_container{
+
+    font-family: $fontFamilyForText;
+    font-weight: $fontWeight;
+    font-size: $fontSize;
+
+    max-width: 40%;
+    width: fit-content;    
+    padding: 20px 30px;
+    
+    margin: 5px 0;
+    border-radius: 50px;
+
+    background: $colorManMessage;
+    color: $colorTextInManMessage;
+
+    text-align: left;
+
+    margin-left: 15px;
+
+    @media screen and (max-width: 600px){
+        max-width: 100%;
+    }
+}
+
+.man_message{
+    text-align: right;
+    margin-left: auto;
+    margin-right: 15px;
+    
+    background: $colorBotMessage;
+    color: $colorTextInBotMessage;
+
+    @media screen and (min-width: 650px){
+        margin-left: 15px;
+    }
+}
