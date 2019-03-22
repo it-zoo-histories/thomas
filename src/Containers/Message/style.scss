@@ -2,7 +2,7 @@
 
 $fontFamilyForText : 'Istok Web', sans-serif;
 $fontWeight: 700;
-$fontSize: 1.4em;
+$fontSize: 1.3em;
 
 $colorBotMessage : #353b48;
 $colorManMessage: #8c7ae6;
@@ -11,13 +11,23 @@ $colorTextInManMessage: #e6e6e6;
 
 .message_container{
 
+    & ::before {
+        transform: translateX(0);
+    }
+
+    & ::after {
+        transform: translateX(0);
+        transition: transform .5s;
+    }
+
+
     font-family: $fontFamilyForText;
     font-weight: $fontWeight;
     font-size: $fontSize;
 
     max-width: 40%;
     width: fit-content;    
-    padding: 20px 30px;
+    padding: 10px 30px;
     
     margin: 5px 0;
     border-radius: 50px;

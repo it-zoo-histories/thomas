@@ -1,25 +1,40 @@
 $colorInputArea : #e6e6e6;
 $colorBlock : #152455;
 
+$fontSize: 1.4em;
+
 .inputblock_container{
     display: flex;
     flex-direction: row;
 
     background: $colorBlock;
-    padding: 12px;
+    padding: 5px;
 
     .inputField{
         width: 100%;
-        margin-left: 15px;
+
         border-radius: 50px;
+
         background: $colorInputArea;
+        font-size: $fontSize;
+
+        resize: none;
+        overflow: auto;
+
+        padding: 3px 15px;
+        margin-left: 15px;
+
+        border: none;
+        outline: none;
+    }
+
+    input[type=submit]{
+        border: 0 none;
     }
 
     .sendButton{
         margin: 0 15px;
-        background-image: url('./send.png');
-        background-repeat: no-repeat;
-        background-size: contain;
+        text-decoration: none;
         width: 50px;
         height: 45px;
     }

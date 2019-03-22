@@ -5,10 +5,10 @@ import './style.scss';
 export default class InputBlock extends Component{
     render = () => {
         return (
-            <div className="inputblock_container">
-                <textarea className="inputField"/>
-                <div className="sendButton" />
-            </div>
+            <form className="inputblock_container">
+                <input type="text" className="inputField"/>
+                <input type="image" className="sendButton" src="./send.png" width="45px" height="45px"/>
+            </form>
         )
     }
 }

@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 
+
 import MessagesBlock from '../MessagesBlock';
 import InputBlock from '../InputBlock';
 
