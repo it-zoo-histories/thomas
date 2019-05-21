@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
 
 import './mainStyles.scss';
-import Router from './router';
+import Router from './Components/Router/router';
 
 import {Provider} from 'react-redux';
 import configureStore from './Store';

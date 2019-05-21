@@ -2,9 +2,9 @@ import React from 'react';
 
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 
-import MainPage from './Containers/MainPage';
-import AuthPage from './Containers/AuthPage';
-import NotFoundPage from './Containers/NotFoundPage';
+import MainPage from '../../Containers/MainPage';
+import AuthPage from '../../Containers/AuthPage';
+import NotFoundPage from '../../Containers/NotFoundPage';
 
 export default function Router(props){
     return (
