@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
 
-import './style.scss';
-
-class AuthPage extends Component{
+class FormConstructor extends Component{
     configureField = (name, previewName, actor, index) => {
         let param = ``;
 
