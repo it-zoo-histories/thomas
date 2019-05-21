@@ -1,12 +1,13 @@
 import React, {Component} from 'react';
 
+import {connect} from 'react-redux';
 
 import MessagesBlock from '../MessagesBlock';
 import InputBlock from '../InputBlock';
 
 import './style.scss';
 
-export default class MainPage extends Component{
+class MainPage extends Component{
     render = () => {
         return(
             <div className="mainpage_container">
@@ -16,3 +17,13 @@ export default class MainPage extends Component{
         )
     }
 }
+
+function mapStore(state){
+    return{}
+}
+
+function mapDispatches(dispatch){
+    return{}
+}
+
+export default connect(mapStore, mapDispatches)(MainPage)

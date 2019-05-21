@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 
-export default class NotFoundPage extends Component{
+import {connect} from 'react-redux';
+
+class NotFoundPage extends Component{
     render = () => {
         return(
             <div className="notfound_container">
@@ -9,3 +11,13 @@ export default class NotFoundPage extends Component{
         )
     }
 }
+
+function mapStore(state){
+    return{}
+}
+
+function mapDispatches(dispatch){
+    return{}
+}
+
+export default connect(mapStore, mapDispatches)(NotFoundPage)

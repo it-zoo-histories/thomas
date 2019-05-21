@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
 
+import {connect} from 'react-redux';
+
 import './style.scss';
 
-export default class InputBlock extends Component{
+class InputBlock extends Component{
     render = () => {
         return (
             <form className="inputblock_container" onSubmit={(event) => {
@@ -16,3 +18,13 @@ export default class InputBlock extends Component{
         )
     }
 }
+
+function mapStore(state){
+    return{}
+}
+
+function mapDispatches(dispatch){
+    return{}
+}
+
+export default connect(mapStore, mapDispatches)(InputBlock)

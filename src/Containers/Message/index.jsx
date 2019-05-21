@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
 import classNames from 'classnames';
 
+import {connect} from 'react-redux';
 
 import './style.scss';
 
-export default class Message extends Component{
+class Message extends Component{
     render = () => {
         const {body, isBotMessage} = this.props.data;
         return(
@@ -14,3 +15,14 @@ export default class Message extends Component{
         )
     }
 }
+
+
+function mapStore(state){
+    return{}
+}
+
+function mapDispatches(dispatch){
+    return{}
+}
+
+export default connect(mapStore, mapDispatches)(Message)
