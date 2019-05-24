@@ -1,0 +1,1 @@
+export const API_NICKEL = "http://localhost:8080"

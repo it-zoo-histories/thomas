@@ -9,13 +9,13 @@ import RegisterPage from '../../Containers/RegisterPage';
 import SettingPage from '../../Containers/SettingPage';
 import MessengerPage from '../../Containers/MessengerPage';
 
-export default function Router(props){
+export default function Router(props) {
     return (
         <BrowserRouter>
             <Switch>
                 <Route exact path="/" component={MessengerPage}/>
                 <PrivateRoute exact path="/settings" component={SettingPage}/>
-                
+
                 <Route path="/local/registration" component={RegisterPage}/>
                 <Route path="/local/login" component={AuthPage}/>
                 <Route component={NotFoundPage}/>
