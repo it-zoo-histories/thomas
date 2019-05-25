@@ -7,10 +7,10 @@ import './style.scss';
 
 class Message extends Component{
     render = () => {
-        const {body, isBotMessage} = this.props.data;
+        console.log("props", this.props);
         return(
-            <div className={classNames("message_container", {"man_message": !isBotMessage})}>
-                <div className="message_body">{body}</div>
+            <div className={classNames("message_container", {"man_message": !this.props.isBotMessage})}>
+                <div className="message_body">{this.props.text}</div>
             </div>
         )
     }
