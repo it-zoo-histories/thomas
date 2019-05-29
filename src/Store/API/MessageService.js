@@ -10,11 +10,11 @@ class MessageService {
     /**
      * Get message to specified user from Nickel
      * @param userId
-     * @returns {Promise<void>}
+     * @returns {Promise<T>}
      */
-    async getMessages(userId) {
+    async getMessages(userId, offset, limit) {
         return await request({
-            url: API_NICKEL + "/messages?user_id=" + `${userId}`,
+            url: API_NICKEL + "/messages/all?user_id=" + `${userId}&offset=${offset}&limit=${limit}`,
             method: "GET"
         })
     }
@@ -25,10 +25,11 @@ class MessageService {
      * @returns {Promise<void>}
      */
     async createMessage(message) {
+        console.log("Service create message", message);
         return await request({
             url: API_NICKEL + "/messages/",
             method: "POST",
-            body: message
+            body: JSON.stringify(message)
         })
     }
 
@@ -41,7 +42,7 @@ class MessageService {
         return await request({
             url: API_NICKEL + "/messages/",
             method: "PUT",
-            body: message
+            body: JSON.stringify(message)
         })
     }
 
