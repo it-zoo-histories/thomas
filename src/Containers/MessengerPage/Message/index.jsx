@@ -16,7 +16,6 @@ class Message extends Component{
     }
 }
 
-
 function mapStore(state){
     return{}
 }
